@@ -1,0 +1,7 @@
+npm install ejs
+npm install express
+npm install method-override
+npm install multer
+npm install mysql2
+npm install nodemon
+npm install sequelize

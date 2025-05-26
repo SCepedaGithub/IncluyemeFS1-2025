@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atuendos Encanto</title>
+    <link rel="stylesheet" href="ventaderopa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Atuendos Encanto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./formularioventaderopa.html">Contacto</a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.ejs">Stock</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categoría
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#h">Hombre</a></li>
+              <li><a class="dropdown-item" href="#m">Mujer</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#j">Juvenil</a></li>
+              <li><a class="dropdown-item" href="#i">Infantil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+      
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>   
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 70px;">
+  <div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+  <img src="images/imagen10.jpg" class="d-block w-100" alt="Campera de cuero">
+  <div class="carousel-caption d-none d-md-block">
+  <!-- <h5>Campera de cuero</h5> -->
+  <p>Estilo y comodidad para hombres.</p>
+  </div>
+  </div>
+  <div class="carousel-item">
+  <img src="images/imagen11.webp" class="d-block w-100" alt="Pantalones de Lino">
+  <div class="carousel-caption d-none d-md-block">
+  <!-- <h5>Pantalones de Lino</h5> -->
+  <p>Elegancia para mujeres.</p>
+  </div>
+  </div>
+  <div class="carousel-item">
+  <img src="images/imagen3.jpg" class="d-block w-100" alt="Remera Manga Larga">
+  <div class="carousel-caption d-none d-md-block">
+  <!-- <h5>Remera Manga Larga</h5> -->
+  <p>Moda juvenil para todas las edades.</p>
+  </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Siguiente</span>
+  </button>
+  </div>
+
+<!-- <p id="top">/p> -->
+
+
+<h2 id="h">Ropa Hombres</h2>
+
+    <div class="ropas-container">
+        <div class="ropa">
+          <img src="images/hombre1.jpg" alt="Campera de cuero">
+          <h3>Campera de cuero</h3>
+    <div class="button-container">
+          <button class="btn btn-dark" type="button">Comprar</button>
+</div>
+             <p>$100.000</p>
+        </div>
+        
+      
+
+        <div class="ropa">
+            <img src="images/hombre2.jpg" alt="Buzo rojo">
+            <h3>Buzo rojo</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$50.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/hombre3.jpg" alt="Jean beige">
+            <h3>Jean Beige</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$75.000</p>
+
+        </div>
+
+        <div class="ropa">
+            <img src="images/hombre4.jpg" alt="Blazer Azul">
+            <h3>Blazer Azul</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$45.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/hombre5.jpg" alt="Camisa Negra">
+            <h3>Camisa Negra</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$70.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/hombre6.jpg" alt="Saco Gris">
+            <h3>Saco Gris</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$120.000</p>
+            
+        </div>
+
+       
+    </div>
+    
+    <li class="subir">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+    <br>
+
+
+    <h2 id="m">Ropa Mujeres</h2>
+
+    <div class="ropas-container">
+        <div class="ropa">
+            <img src="images/mujer1.jpg" alt="Pantalones de Lino">
+            <h3>Pantalones de Lino</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$185.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/mujer2.jpg" alt="Saco 7/8 de hilo">
+            <h3>Saco 7/8 de hilo</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$120.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/mujer3.jpg" alt="Vestido estampado Bulgaro">
+            <h3>Vestido estampado Bulgaro</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+              
+    </div>
+                <p>$200.000</p>
+        </div>
+
+        <div class="ropa">
+            <img src="images/mujer4.jpg" alt="Sacos diversos colores">
+            <h3>Sacos diversos colores</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$80.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/mujer5.jpg" alt="Saco Celeste">
+            <h3>Saco Celeste</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$90.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/mujer6.jpg" alt="Remera Amarilla">
+            <h3>Remera Amarilla</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+             <p>$75.000</p>
+        </div>
+
+        
+    </div>
+
+    <li class="subir">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+    <br>
+
+    <h2 id="j">Ropa Juvenil</h2>
+
+    <div class="ropas-container">
+        <div class="ropa">
+            <img src="images/juvenil1.jpg" alt="Remera Manga Larga">
+            <h3>Remera Manga Larga</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$50.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/juvenil2.jpg" alt="Campera de Jean">
+            <h3>Campera de Jean</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$130.000</p>
+           
+        </div>
+
+        <div class="ropa">
+            <img src="images/juvenil3.jpg" alt="Hoody Bordó">
+            <h3>Hoody Bordó</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$75.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/juvenil4.jpg" alt="Camisa a Cuadros">
+            <h3>Camisa a Cuadros</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+               <p>$150.000</p>
+        </div>
+
+        <div class="ropa">
+            <img src="images/juvenil5.jpg" alt="Chaleco Inflable">
+            <h3>Chaleco Inflable</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$140.000</p>
+           
+        </div>
+
+        <div class="ropa">
+            <img src="images/juvenil6.jpg" alt="Jean Destroy">
+            <h3>Jean Destroy</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$120.000</p>
+           
+        </div>
+
+        
+    </div>
+
+    <li class="subir">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+    <br>
+
+    <h2 id="i">Ropa Infantil</h2>
+
+    <div class="ropas-container">
+        <div class="ropa">
+            <img src="images/infantil1.jpg" alt="Musculosa Negra">
+            <h3>Musculosa Negra</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$85.000</p>
+            
+        </div>
+
+        <div class="ropa">
+            <img src="images/infantil2.jpg" alt="Remera Blanca">
+            <h3>Remera Blanca</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                <p>$85.000</p>
+        </div>
+
+        <div class="ropa">
+            <img src="images/infantil3.jpg" alt="Calza Azul">
+            <h3>Calza Azul</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$90.000</p>
+           
+        </div>
+
+        <div class="ropa">
+            <img src="images/infantil4.jpg" alt="Gorro Piluso">
+            <h3>Gorro Piluso</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$25.000</p>
+           
+        </div>
+
+        <div class="ropa">
+            <img src="images/infantil5.jpg" alt="Short de Jean">
+            <h3>Short de Jean</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                <p>$55.000</p>
+        </div>
+
+        <div class="ropa">
+            <img src="images/infantil6.jpg" alt="Zapatillas Rojas">
+            <h3>Zapatillas Rojas</h3>
+            <div class="button-container">
+              <button class="btn btn-dark">Comprar</button>
+    </div>
+                 <p>$85.000</p>
+           
+        </div>
+
+        
+    </div>
+
+    <li class="subir">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+    <br>
+
+
+
+    <footer class="footer">
+
+      <div class="contenedor-footer">
+  
+          <div class="columna">
+              <h3>Contacto</h3>
+              <p>info@atuendosencanto.com</p>
+              <p>+54 9 11 1234 5678</p>
+          </div>
+          <div class="columna">
+              <h3>Redes Sociales</h3>
+              <div class="iconos">
+<a href="https://facebook.com" class="facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com" class="instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/5491112345678" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+              </div>
+          </div>
+          <div class="columna">
+              <h3>Ubicación</h3>
+              <p>Av. Corrientes 1234, CABA</p>
+              <p>Buenos Aires, Argentina</p>
+          </div>
+          </div>
+  
+      <div class="derechos">
+          &copy; 2025 - Atuendos Encanto. Todos los derechos reservados.
+      </div>
+      
+  </footer>
+
+
+
+
+
+<!-- <footer>
+  <p>&copy; 2025 Atuendos Encanto. Todos los derechos reservados
+
+</footer> -->
+    
+</body>
+</html>

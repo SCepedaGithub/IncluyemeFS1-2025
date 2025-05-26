@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Articulo</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  <div class="container">
+    <h1>Editar Artículo</h1>
+    <form action="/articulos/<%= articulo.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" value="<%= articulo.nombre %>" required>
+      </div>
+      <div>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" id="precio" step="0.01" value="<%= articulo.precio %>" required>
+      </div>
+      <div>
+        <label for="imagen">Imagen:</label>
+        <input type="file" name="imagen" id="imagen">
+        <p>Imagen actual: <img src="/images/<%= articulo.imagen %>" alt="<%= articulo.nombre %>" class="articulo-image-small"></p>
+      </div>
+      <div>
+        <label for="categoria_id">Categoría:</label>
+        <select name="categoria_id" id="categoria_id" required>
+          <% categorias.forEach(categoria => { %>
+            <option value="<%= categoria.id %>" <%= articulo.categoria_id === categoria.id ? 'selected' : '' %>><%= categoria.nombre %></option>
+          <% }) %>
+        </select>
+      </div>
+      <button type="submit" class="button button-primary">Actualizar Articulo</button>
+    </form>
+  </div>
+
+  <a href="/" class="button button-secondary">Volver a Inicio</a> <!-- Enlace para volver al inicio -->
+  
+  <%- include('../partials/footer') %>
+</body>
+</html>

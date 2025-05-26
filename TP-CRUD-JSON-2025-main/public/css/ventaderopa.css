@@ -1,0 +1,141 @@
+/* @media screen and (min-width: 501px) {
+    .brand{
+        justify-content: flex-start;
+    } */
+    #top{
+        padding: 1rem;
+
+       }
+
+    .menu-icon{
+        display: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color:  rgb(105, 53, 53) !important;
+        margin: 0;
+        padding: 0;
+        }
+
+        /* h1{
+            color: #000000;
+            text-align: center;
+            background-color: azure;
+            border-radius: 10px;
+            font-size: 2.5rem;
+            /* width: 60%; */
+            margin: 2rem auto;
+            padding: 1rem;
+            /* padding-left: 20px; */
+            box-shadow: 0 4px 6px rgb(11, 8, 8);
+            scroll-margin-top: 5rem;
+        } */
+
+        header{
+            background-color: #2f4f4f;
+            padding: 1rem 0;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a{
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition:  background-color 0.3s ease;
+        }
+
+        nav a:hover{
+            background-color: #3b5998;
+        }
+
+        h2{
+            color: #000000;
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            background-color:burlywood;
+            scroll-margin-top: 5rem;
+        }
+
+        .movies-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .movie{
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(8, 2, 6);
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .movie:hover{
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgb(5, 3, 4);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .movie h3{
+            font-size: 1.5rem;
+            color: rgb(52, 25, 5);
+            text-align: center;
+        }
+
+        .movie p{
+            font-size: 1rem;
+            color: rgb(5, 6, 6);
+            text-align: center;
+
+        }
+        .subir {
+            list-style: none;
+            display: flex;
+            color:antiquewhite;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+
+        }
+
+        /* Tablet
+        @media (min-width: 500px){
+            .movie{
+                width: calc(50% - 2rem);
+                max-width: 300px;
+            }
+        } */
+
+        /* Compu */
+        @media (min-width: 501px){
+            .movie{
+                width: calc(25% - 2rem);
+                max-width: 300px;
+            }
+        }

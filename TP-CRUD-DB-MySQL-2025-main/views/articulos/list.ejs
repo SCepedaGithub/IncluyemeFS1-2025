@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Artículos - Tienda de Artículos</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  <div class="container">
+    <h1>Listado de Artículos</h1>
+    <a href="/articulos/create" class="button button-primary">Añadir Nuevo Artículo</a>
+    
+    <div class="articulo-cards">
+      <% articulos.forEach(articulo => { %>
+        <div class="articulo-card">
+          <img src="/images/<%= articulo.imagen %>" alt="<%= articulo.nombre %>" class="articulo-image">
+          <div class="articulo-info">
+            <h2 class="articulo-name"><%= articulo.nombre %></h2>
+            <!-- <p class="articulo-description"><%= articulo.descripcion %></p> -->
+            <p class="articulo-price">$<%= articulo.precio %></p>
+            <p class="articulo-category"> <strong>Categoría:</strong> <%= articulo.Categoría ? articulo.Categoria.nombre : 'Sin Categoría' %></p>
+            <div class="articulo-actions">
+              <a href="/articulos/<%= articulo.id %>/edit" class="button">Editar</a>
+              <form action="/articulos/<%= articulo.id %>?_method=DELETE" method="POST" style="display:inline;">
+                <button type="submit" class="button button-danger">Eliminar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <a href="/" class="button button-secondary">Volver a Inicio</a>
+  </div>
+
+  <%- include('../partials/footer') %>
+</body>
+</html>

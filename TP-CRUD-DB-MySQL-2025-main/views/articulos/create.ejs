@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir Moto</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  <div class="container">
+    <h1>Añadir Nuevo Artículo</h1>
+    <form action="/articulos/create" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+      </div>
+      <div>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" id="precio" step="0.01" required>
+      </div>
+      <div>
+        <label for="imagen">Imagen:</label>
+        <input type="file" name="imagen" id="imagen">
+      </div>
+      <div>
+        <label for="categoria_id">Categoría:</label>
+       <select name="categoria_id" id="categoria_id" required>
+          <% categorias.forEach(categoria => { %>
+            <option value="<%= categoria.id %>"><%= categoria.nombre %></option>
+          <% }) %>
+        </select>
+      </div>
+      <button type="submit">Añadir Artículo</button>
+    </form>
+  </div>
+
+  <a href="/" class="button button-secondary">Volver a Inicio</a> <!-- Enlace para volver al inicio -->
+
+  <%- include('../partials/footer') %>
+</body>
+</html>

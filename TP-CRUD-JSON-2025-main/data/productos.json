@@ -1,0 +1,146 @@
+[
+ {
+  "id": 1,
+  "articulo": "Campera de cuero",
+  "precio": 100000,
+  "imagen": "hombre1.jpg"
+ },
+ {
+  "id": 2,
+  "articulo": "Buzo rojo",
+  "precio": 50000,
+  "imagen": "hombre2.jpg"
+ },
+ {
+  "id": 3,
+  "articulo": "Jean Beige",
+  "precio": 75000,
+  "imagen": "hombre3.jpg"
+ },
+ {
+  "id": 4,
+  "articulo": "Blazer Azul",
+  "precio": 45000,
+  "imagen": "hombre4.jpg"
+ },
+ {
+  "id": 5,
+  "articulo": "Camisa Negra",
+  "precio": 70000,
+  "imagen": "hombre5.jpg"
+ },
+ {
+  "id": 6,
+  "articulo": "Saco Gris",
+  "precio": 120000,
+  "imagen": "hombre6.jpg"
+ },
+ {
+  "id": 7,
+  "articulo": "Pantalones de Lino",
+  "precio": 185000,
+  "imagen": "mujer1.jpg"
+ },
+ {
+  "id": 8,
+  "articulo": "Saco 7/8 de hilo",
+  "precio": 120000,
+  "imagen": "mujer2.jpg"
+ },
+ {
+  "id": 9,
+  "articulo": "Vestido estampado Bulgaro",
+  "precio": 200000,
+  "imagen": "mujer3.jpg"
+ },
+ {
+  "id": 10,
+  "articulo": "Sacos diversos colores",
+  "precio": 80000,
+  "imagen": "mujer4.jpg"
+ },
+ {
+  "id": 11,
+  "articulo": "Saco Celeste",
+  "precio": 90000,
+  "imagen": "mujer5.jpg"
+ },
+ {
+  "id": 12,
+  "articulo": "Remera Amarilla",
+  "precio": 75000,
+  "imagen": "mujer6.jpg"
+ },
+ {
+  "id": 13,
+  "articulo": "Remera Manga Larga",
+  "precio": 50000,
+  "imagen": "juvenil1.jpg"
+ },
+ {
+  "id": 14,
+  "articulo": "Campera de Jean",
+  "precio": 130000,
+  "imagen": "juvenil2.jpg"
+ },
+ {
+  "id": 15,
+  "articulo": "Hoody Bordó",
+  "precio": 75000,
+  "imagen": "juvenil3.jpg"
+ },
+ {
+  "id": 16,
+  "articulo": "Camisa a Cuadros",
+  "precio": 150000,
+  "imagen": "juvenil4.jpg"
+ },
+ {
+  "id": 17,
+  "articulo": "Chaleco Inflable",
+  "precio": 140000,
+  "imagen": "juvenil5.jpg"
+ },
+ {
+  "id": 18,
+  "articulo": "Jean Destroyed",
+  "precio": 120000,
+  "imagen": "juvenil6.jpg"
+ },
+ {
+  "id": 19,
+  "articulo": "Musculosa Negra",
+  "precio": 85000,
+  "imagen": "infantil1.jpg"
+ },
+ {
+  "id": 20,
+  "articulo": "Remera Blanca",
+  "precio": 85000,
+  "imagen": "infantil2.jpg"
+ },
+ {
+  "id": 21,
+  "articulo": "Calza Azul",
+  "precio": 90000,
+  "imagen": "infantil3.jpg"
+ },
+ {
+  "id": 22,
+  "articulo": "Gorro Piluso",
+  "precio": 25000,
+  "imagen": "infantil4.jpg"
+ },
+ {
+  "id": 23,
+  "articulo": "Short de Jean",
+  "precio": 55000,
+  "imagen": "infantil5.jpg"
+ },
+ {
+  "id": 24,
+  "articulo": "Zapatillas Rojas",
+  "precio": 85000,
+  "imagen": "infantil6.jpg"
+ }
+]
