@@ -16,9 +16,17 @@ const storage = multer.diskStorage({
   const upload = multer({ storage });
   
   
-  router.get('/', (req, res) =>{
+/*   router.get('/', (req, res) =>{
       res.render('home')
   });
+ */
+  router.get('/', (req, res) =>{
+    res.render('ventaderopa')
+});
+
+router.get('/contacto', (req, res) =>{
+  res.render('formularioventaderopa')
+});
 
   router.get('/articulos', articuloController.list);
   

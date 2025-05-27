@@ -1,0 +1,231 @@
+/* @media screen and (min-width: 501px) {
+    .brand{
+        justify-content: flex-start;
+    } */
+    #top{
+        padding: 1rem;
+
+       }
+
+    .menu-icon{
+        display: none;
+    }
+
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color:  rgb(105, 53, 53) !important;
+        margin: 0;
+        padding: 0;
+        }
+
+        h1{
+            color: #000000;
+            text-align: center;
+            background-color: azure;
+            border-radius: 10px;
+            font-size: 2.5rem;
+            /* width: 60%; */
+            margin: 2rem auto;
+            padding: 1rem;
+            /* padding-left: 20px; */
+            box-shadow: 0 4px 6px rgb(11, 8, 8);
+            scroll-margin-top: 5rem;
+        } 
+
+        header{
+            background-color: #2f4f4f;
+            padding: 1rem 0;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a{
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition:  background-color 0.3s ease;
+        }
+
+        nav a:hover{
+            background-color: #3b5998;
+        }
+
+        .carousel-item img {
+            height: 400px; /* Set the desired height / 
+            object-fit: cover; / Make image cover the area without distortion / 
+            width: 100%; / Fill the width */
+            }
+
+        h2{
+            color: #000000;
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            background-color:burlywood;
+            scroll-margin-top: 5rem;
+        }
+            
+        .ropas-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4rem;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .ropa{
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(8, 2, 6);
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ropa:hover{
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgb(5, 3, 4);
+        }
+
+        .ropa img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .ropa h3{
+            font-size: 1.5rem;
+            color: rgb(52, 25, 5);
+            text-align: center;
+        }
+
+        .ropa p{
+            font-size: 1rem;
+            color: rgb(5, 6, 6);
+            text-align: center;
+
+        }
+        .subir {
+            list-style: none;
+            display: flex;
+            color:antiquewhite;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: Arial, sans-serif;
+            background-color: blanchedalmond;
+        }
+        
+        .footer{
+            background-color: rgb(102, 91, 91);
+            color: azure;
+            padding: 32px 16px;
+            text-align: center;
+        }
+        
+        .contenedor-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .columna h3{
+            margin-bottom: 8px;
+            color: darkgoldenrod;   
+        }
+        
+        .iconos{
+            display: flex;
+            justify-content:center;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        
+        .iconos a{
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+        
+        .iconos a.facebook{color: #1877f2 ;}
+        .iconos a.instagram{color: #e1306c} 
+        .iconos a.whatsapp{color:#25d366}
+        
+        .iconos a:hover{
+            transform: scale(1.2);
+            color: beige;
+        }
+        
+        .derechos{
+            font-size: 12px;
+            margin-top: 16px;
+            color: rgb(213, 202, 202);
+        }
+        
+        /* Estilos para compu */
+        @media (min-width: 501px) {
+            .contenedor-footer{
+                flex-direction: row;
+                justify-content:space-around;
+                padding: 0 50px;
+                align-items: center;
+        
+            }
+        
+            .derechos{
+                font-size: 10px;
+                color: azure;
+            }
+        }
+
+        /* footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+
+        } */
+
+        /* Tablet
+        @media (min-width: 500px){
+            .ropa{
+                width: calc(50% - 2rem);
+                max-width: 300px;
+            }
+        } */
+
+        /* Compu */
+        @media (min-width: 501px){
+            .ropa{
+                width: calc(25% - 2rem);
+                max-width: 300px;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center the button horizontally */
+            margin-top: 5px; /* Reduced vertical spacing */
+          
+
+        }
