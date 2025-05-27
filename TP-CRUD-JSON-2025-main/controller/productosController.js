@@ -26,7 +26,7 @@ const productosController = {
        try{
         productos.push(nuevoProduct);
         fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-        res.redirect("/")
+        res.redirect("/productos")
        }
        catch(err){
         console.log("Error al guardar el producto")
@@ -52,7 +52,7 @@ const productosController = {
             productos[productoIndex] = {id: Number(id), articulo, precio, imagen};
             try{
                  fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect("/")
+                res.redirect("/productos")
             }
             catch(err){
             console.log("Error al editar el producto")
@@ -79,7 +79,7 @@ const productosController = {
             productos.splice(productoIndex, 1);
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-                res.redirect("/");
+                res.redirect("/productos");
             } catch (err) {
                 console.log("Error al eliminar el producto");
                 console.error(err);

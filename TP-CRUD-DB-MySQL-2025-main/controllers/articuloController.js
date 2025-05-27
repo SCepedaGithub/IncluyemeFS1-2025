@@ -9,7 +9,7 @@ const articuloController = {
             res.status(500).send('Error al obtener los articulos');
           }
     },
-      
+  
     create: async (req, res) => {
           try {
             const categorias = await Categoria.findAll();
