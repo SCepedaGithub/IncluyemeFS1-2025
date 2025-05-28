@@ -21,7 +21,7 @@
             <h2 class="articulo-name"><%= articulo.nombre %></h2>
             <!-- <p class="articulo-description"><%= articulo.descripcion %></p> -->
             <p class="articulo-price">$<%= articulo.precio %></p>
-            <p class="articulo-category"> <strong>Categoría:</strong> <%= articulo.Categoria ? articulo.Categoria.nombre : 'Sin Categoría' %></p>
+            <p class="articulo-category"> <strong>Categoría:</strong> <%= articulo.categoria ? articulo.categoria.nombre : 'Sin Categoría' %></p>
             <div class="articulo-actions">
               <a href="/articulos/<%= articulo.id %>/edit" class="button">Editar</a>
               <form action="/articulos/<%= articulo.id %>?_method=DELETE" method="POST" style="display:inline;">

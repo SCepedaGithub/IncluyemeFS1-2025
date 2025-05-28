@@ -3,7 +3,7 @@ const { Articulo, Categoria } = require('../models');
 const articuloController = {
     list: async (req, res) =>{
         try {
-            const articulos = await Articulo.findAll({ include: Categoria });
+            const articulos = await Articulo.findAll({ include: { model: Categoria, as: 'categoria' } });
             res.render('articulos/list', { articulos });
           } catch (error) {
             res.status(500).send('Error al obtener los articulos');
