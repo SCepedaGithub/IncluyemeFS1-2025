@@ -41,7 +41,7 @@
         color: coral;
       }
 
-      input[type="text"], select {
+/*       input[type="text"], select {
         width: 10%;
         padding: 8px;
         border-radius: 4px;
@@ -60,16 +60,16 @@
         font-size: 16px;
       }
       input[type="submit"]:hover {
-        /* background-color: #6ff175; */
+         background-color: #f1ce6f; 
       }
-      
-    body {
+       */
+/*     body {
         font-family: Arial, sans-serif;
         background-color:   rgb(105, 53, 53) !important;
         margin: 0;
         padding: 0;
         }
-
+ */
         h1{
             color: #000000;
             text-align: center;
@@ -104,7 +104,7 @@
         }
 
         nav a:hover{
-            background-color: #3b5998;
+            background-color: #493b98;
         }
 
         h2{
@@ -130,7 +130,7 @@
         }
 
 
-        .ropas-container{
+/*         .ropas-container{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -170,7 +170,7 @@
             color: rgb(5, 6, 6);
             text-align: center;
 
-        }
+        } */
 
         .form {
             width: 600px;
@@ -219,15 +219,17 @@
           } 
 
         footer{
-    /* background-color: red; Changed to red */
-    color: azure;
-    padding: 32px 16px;
-    text-align: center;
-}
+         /* background-color: red; Changed to red */
+         background-color: #333;
+         color: azure;
+            padding: 32px 16px;
+            text-align: center;
+    }
         
         .contenedor-footer{
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             gap: 24px;
             margin-bottom: 16px;
@@ -271,15 +273,17 @@
       
         }
         .footer{
-            background-color: rgb(102, 91, 91);
+            /* background-color: rgb(102, 91, 91); */
+            background-color: #333;
             color: azure;
             padding: 32px 16px;
             text-align: center;
         }
         
-        .contenedor-footer{
+ /*        .contenedor-footer{
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             gap: 24px;
             margin-bottom: 16px;
@@ -315,7 +319,8 @@
             font-size: 12px;
             margin-top: 16px;
             color: rgb(213, 202, 202);
-        }
+        } */
+
         @media (min-width: 501px) {
             .contenedor-footer{
                 flex-direction: row;
@@ -324,6 +329,7 @@
                 align-items: center;
         
             }
+
         /* footer{
             background-color: #333;
             color: #fff;

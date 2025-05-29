@@ -6,8 +6,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  background-color:  rgb(105, 53, 53) !important;
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -17,8 +19,11 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #f44336;
+  color: burlywood;;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2 {
+  background-color:burlywood;
 }
 
 p {
@@ -27,12 +32,13 @@ p {
   margin: 0 auto 2rem;
   line-height: 1.6;
   text-align: center;
+  color:#fff
 }
 
 a {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #ff5722;
+  background-color: burlywood;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -41,7 +47,7 @@ a {
 }
 
 a:hover {
-  background-color: #e64a19;
+  background-color: #e69e19;
 }
 
 div {

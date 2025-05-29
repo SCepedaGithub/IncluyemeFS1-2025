@@ -29,7 +29,13 @@
             </div>
              <div>
                 <label for="imagen">Imagen: </label>
-                <input type="file" id="imagen" name="imagen">
+                <input type="file" id="imagen" name="imagen" value="<%=producto.imagen%>">
+                <% if (producto.imagen) { %>
+                    <div>
+                        <p>Imagen actual:</p>
+                        <img src="/images/<%= producto.imagen %>" alt="Imagen del producto" style="max-width: 200px; max-height: 200px;">
+                    </div>
+                <% } %>
             </div>
             <button type="submit">Actualizar</button>
         </form>

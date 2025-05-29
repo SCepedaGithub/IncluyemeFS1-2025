@@ -11,7 +11,8 @@ body {
   color: #333; */
   font-family: Arial, sans-serif;
   /* background-color: #d4cdcd; */
-  background-color: #a83939!important;
+  /* background-color: #a83939!important; */
+  background-color:  rgb(105, 53, 53) !important;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +24,14 @@ main {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
+}
+
+body h1 {
+  color: whitesmoke
+}
+
+label {
+  color: whitesmoke
 }
 
 /* Lista de productos */
