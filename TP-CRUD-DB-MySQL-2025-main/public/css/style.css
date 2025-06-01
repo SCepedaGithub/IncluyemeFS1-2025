@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+header{
+  background-color: #2f4f4f;
+  padding: 1rem 0;
+}
+
 body {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Arial, sans-serif;
